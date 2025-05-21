@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+  <style>
+    *{margin : 0; padding : 0;box-sizing: border-box;}
+    body{margin: 0 auto;background: #eaeaea}
+    #wrapper {width: 1600px;height: 3000px;margin: 0 auto;background: #7498ae;}
+    header {width: 200px;height: 100%;background: black;position: fixed;line-height: 30px}
+    section {width: 1400px;height: 3000px;margin-left:200px;background:yellow;}
+    header h2 {
+      color: white;text-align: center;padding-top: 20px;
+      font-family: "Dancing Script", cursive;
+      font-optical-sizing: auto;
+      font-weight: bold;
+      font-style: normal;
+      }
+    header div {padding-top: 30px;padding-left: 30px;;font-size: 14px;}
+    header div p {color: white;font-size: 16px;font-weight: bold;}
+    header div p a {color: #515151;text-decoration: none;}
+    header span {color :cadetblue}
+    header input[type=text]
+    {width: 70px;height: 20px;border: 1px solid #bcbcbc;
+      margin-top: 10px;background: #bcbcbc;margin-left: 30px;}
+    header input[type=button]
+    {width: 70px;height: 20px;border: 1px solid #bcbcbc;color:#bcbcbc; background: #000000;}
+    .banner{
+      position: relative;
+    }
+    .banner img{
+      margin : 50px 100px;
+    }
+    .banner div{
+      width : 120px;
+      height :120px;
+      border : none;
+      background-color: black;
+      color: white;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 120px;
+      font-size: 30px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+    section article {
+      display: inline-block;
+    }
+    section article ul {
+      float: left;
+      margin-left: 150px;
+      list-style: none;
+    }
+    section article ul li {
+      float: left;
+      margin-right: 20px;
+    }
+    section article ul img{
+      border-right: 4px solid rgba(0,0,0,0.2);;
+      border-bottom: 4px solid rgba(0,0,0,0.2);;
+    }
+  </style>
+</head>
+<body>
+  <div id ="wrapper">
+    <header>
+      <h2>1987<br>DESIGN</h2>
+      <div>
+        <p>MEMBER</p>
+        <p><a href="">LOGIN</a></p>
+        <p><a href="">JOIN US</a></p>
+        <p><a href="">CART <span>(OITEM)</span></a></p>
+        <p><a href="">ORDER</a></p>
+        <p><a href="">MY PAGE</a></p>
+        <p>CATEGORY</p>
+        <p><a href="">OUTER</a></p>
+        <p><a href="">TOP</a></p>
+        <p><a href="">BOTTOM</a></p>
+        <p><a href="">ACC</a></p>
+        <p><a href="">SALE</a></p>
+        <p><a href="">TODAY VIEW</a></p>
+        <p>BOARD</p>
+        <p><a href="">NOTICE</a></p>
+        <p><a href="">REVIEW</a></p>
+        <p><a href="">Q&A</a></p>
+      </div>
+      <input type="text" id="SEARCH"><input type="button" value="SEARCH">
+    </header>
+
+    <section>
+      <div class="banner">
+        <img src="./img/main_pic.jpg"  alt="mainImg">
+        <div class ="button'">►</div>
+      </div>
+      <article>
+        <ul>
+          <li><img src="./img/bn1.jpg"  alt="Img"></li>
+          <li><img src="./img/bn2.jpg"  alt="Img"></li>
+          <li><img src="./img/bn3.jpg"  alt="Img"></li>
+          <li><img src="./img/bn4.jpg"  alt="Img"></li>
+          <li><img src="./img/bn5.jpg"  alt="Img"></li>
+          <li><img src="./img/bn6.jpg"  alt="Img"></li>
+          <li><img src="./img/bn7.jpg"  alt="Img"></li>
+          <li><img src="./img/bn8.jpg"  alt="Img"></li>
+          <li><img src="./img/bn9.jpg"  alt="Img"></li>
+          <li><img src="./img/bn10.jpg"  alt="Img"></li>
+          <li><img src="./img/bn11.jpg"  alt="Img"></li>
+          <li><img src="./img/bn12.jpg"  alt="Img"></li>
+        </ul>
+      </article>
+    </section>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+		*{margin: 0; padding: 0;}
+		h1{
+			margin:22px 8px
+		}
+        table {
+			margin-left: 36px;
+            /*padding: 10px;*/
+            /*margin: 10px;*/
+        }
+		th{
+			text-align: left;
+			font-weight: normal;
+		}
+        th,td {
+            padding: 10px;
+        }
+		input[type=submit] {
+			padding: 1px 6px;
+		}
+	</style>
+</head>
+<body>
+
+<h1>예약정보</h1>
+<form action="./action.php" method="post">
+	<table>
+		<tr>
+			<th><label for="memberName">이 름</label></th>
+			<td><input type="text" name="memberName" id="memberName"></td>
+
+		</tr>
+		<tr>
+			<th><label for="phoneNum"> 휴대폰</label></th>
+			<td><input type="tel" name="phoneNum" id="phoneNum"><br></td>
+		</tr>
+		<tr>
+			<th><label for="email"> 이메일</label></th>
+			<td><input type="email" name="email" id="email"><br></td>
+		</tr>
+		<tr>
+			<th colspan="2"><input type="submit" value="예약하기"></th>
+		</tr>
+	</table>
+</form>
+</body>
+</html>

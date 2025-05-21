@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+
+	<link rel="stylesheet" href="./style.css?0514">
+</head>
+<body>
+<form action="./action.php" method="post">
+	<table class="borderless">
+		<tr>
+			<td><span class="style">회원가입</span></td>
+			<td class="style5">
+			<span class="style2">홈>회원>
+				<span class="style3">회원가입</span>
+			</span>
+			</td>
+		</tr>
+	</table>
+
+	<p>
+		<span></span>
+	</p>
+	<br>
+	<hr>
+	<br>
+
+	<table>
+		<caption><span class="color2">*</span>필수입력사항</caption>
+		<tr>
+			<th>아이디<span class="color2">*</span></th>
+			<td>
+				<label><input type="text" id="id" name="id" required> 영문자,숫자,_만 입력 가능. 최소 3자 이상 입력하세요.</label>
+			</td>
+		</tr>
+
+		<tr>
+			<th>비밀번호<span class="color2">*</span></th>
+			<td>
+				<label><input type="password" id="password" name="password" required> 영문자,숫자,특수문자 중 2종류 이상의 조합으로 10자이상
+					입력하세요</label>
+			</td>
+		</tr>
+
+		<tr>
+			<th>비밀번호 확인<span class="color2">*</span></th>
+			<td>
+				<label><input type="password" id="passwordRe" name="password" required></label>
+			</td>
+		</tr>
+
+		<tr>
+			<th>이름<span class="color2">*</span></th>
+			<td>
+				<label><input type="text" id="name" name="name" required></label>
+			</td>
+		</tr>
+
+		<tr>
+			<th>닉네임<span class="color2">*</span></th>
+			<td>
+				공백없이 한글,영문,숫자만 입력가능(한글2자,영문4자 이상)<br>
+				닉네임을 바꾸시면 앞으로 60일 이내에는 변경 할 수 없습니다.
+				<label><input type="text" id="name2" name="닉네임" required></label>
+			</td>
+		</tr>
+
+		<tr>
+			<th>E-mail<span class="color2">*</span></th>
+			<td>
+				<label><input type="email" id="email" name="email" required></label>
+			</td>
+		</tr>
+
+		<tr>
+			<th>휴대폰번호<span class="color2">*</span></th>
+			<td>
+				<label><input type="tel" id="tel" name="tel" required></label>
+			</td>
+		</tr>
+
+		<tr>
+			<th rowspan="4">주소</th>
+			<td class="address">
+				<label>우편번호 <input type="text" id="zip" name="zip">
+					<button class="submit-btn">주소 검색</button>
+				</label>
+			</td>
+		</tr>
+
+		<tr>
+			<td class="address">
+				<label><input type="text" id="address" name="address"> 기본주소</label>
+			</td>
+		</tr>
+		<tr>
+			<td class="address">
+				<label><input type="text" id="address2" name="address"> 상세주소</label>
+			</td>
+		</tr>
+		<tr>
+			<td class="address">
+				<label><input type="text" id="addressRef" name="address"> 참고항목</label>
+			</td>
+		</tr>
+
+		<tr>
+			<th>메일링서비스</th>
+			<td>
+				<label><input type="checkbox" id="mailing" checked> 정보 메일을 받겠습니다.</label>
+			</td>
+		</tr>
+
+		<tr>
+			<th>SMS 수신여부</th>
+			<td>
+				<label><input type="checkbox" id="SMS" checked> 휴대폰 문자메시지를 받겠습니다.</label>
+			</td>
+		</tr>
+
+		<tr>
+			<th>정보 공개</th>
+			<td>
+				<label>정보공개를 바꾸시면 앞으로 0일 이내에는 변경이 안됩니다.
+					<input type="checkbox" id="consent" checked> 다른분들이 나의 정보를 볼 수 있도록 합니다.</label>
+			</td>
+		</tr>
+
+		<tr>
+			<th>자동등록방지</th>
+			<td>
+				<fieldset>
+					<legend>자동등록방지</legend>
+					<br>
+					<br>
+					<label>
+						<button class="submit-btn">숫자음성듣기</button>
+						<button class="submit-btn">새로고침</button>
+						<input type="text" id="auto">
+						자동등록방지 숫자를 순서대로 입력하세요.
+					</label>
+				</fieldset>
+			</td>
+		</tr>
+	</table>
+
+
+	<br>
+	<p class="submit">
+		<button class="submit-btn" id="join">회원가입</button>
+		<button class="submit-btn" id="cancel">취소</button>
+	</p>
+
+</form>
+</body>
+</html>

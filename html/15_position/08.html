@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+  <style>
+    /*
+    absolute 일반적인 사용방법
+    1. 부모 요소를 relative 로 지정한다.
+    2. 부모 요소의 높이를 지정해서 자식 요소를 감싸주게 한다.
+
+    absolut를 이용한 가운데 정렬
+    기준점이 박스의 왼쪽 상단이어서, 너비와 높이만큼 n/2를 margin 값으로 -적용
+     */
+    *{
+      margin : 0; padding : 0;box-sizing: border-box;}
+    .movie{
+      width: 700px;
+      height: 500px;
+      border: 2px solid gray;
+      background-color: #7498ae;
+      position: relative;
+    }
+    .movie div{
+      width : 120px;
+      height :120px;
+      border : none;
+      border-radius: 50%;
+      background-color: #d3b6a6;
+      text-align: center;
+      line-height: 120px;
+      font-size: 30px;
+      position: absolute;
+    }
+    .prev{
+      top: 50%;
+      left: 10px;
+      margin-top: -60px;
+    }
+    .play{
+      top: calc(50% - 60px);
+      left: calc(50% - 60px);
+      /*transform: translate(-50%,-50%);*/
+    }
+    .next{
+      top: 50%;
+      right: 10px;
+      margin-top: -60px;
+    }
+  </style>
+</head>
+<body>
+  <!-- 부모 요소 relative -->
+  <div class="movie">
+  <!-- 자식 요소 absolute -->
+    <div class="prev">PREV</div>
+    <div class="play">▶️</div>
+    <div class="next">NEXT</div>
+  </div>
+
+</body>
+</html>

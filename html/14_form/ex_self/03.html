@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      border : none;
+    }
+    td,th {
+      border : none;
+      padding : 3px;
+    }
+    input[type=text],input[type=tel] {
+      color: #9e9c9c;
+    }
+  </style>
+</head>
+<body>
+  <h4>배송 정보 입력</h4>
+  <table>
+    <tr>
+      <td>
+        <label>우편번호<span>*</span>
+          <input type="text" id="zip" value="우편번호">
+        </label>
+      </td>
+      <td>
+        <label>주소<span>*</span>
+          <input type="text" id="address" value="주소">
+        </label>
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <label>상세 주소
+          <input type="text" id="address2" value="상세주소(선택)">
+        </label>
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <label>연락처<span>*</span>
+          <input type="tel" id="tel" value="예:010-1234-5678">
+        </label>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

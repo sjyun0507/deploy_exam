@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+    <style>
+      *{
+        margin : 0; padding : 0;
+      }
+      div{
+        background-color : aquamarine;
+        font-size : 30px;
+
+        width : 300px;
+        height : 100px;
+        padding : 50px;
+        border : 5px solid #000;
+        margin : 50px;
+      }
+    </style>
+</head>
+<body>
+    <div>box1</div>
+    박스의 전체 너비는 (510)px이고 높이는 (310)px이다. 박스의 너비는 (410)px이고 높이는 (210)px이다.
+</body>
+<!--박스 너비 : width+ (border + padding)x2 = 300+(5+50)x2 = 300+110 = 410px-->
+<!--박스 높이 : heigh+ (border + padding)x2 = 100+(5+50)x2 = 100+110 = 210px-->
+<!--박스 전체 너비 : width+ (border + padding+ margin)x2 = 300+(5+50+50)x2 = 300+210 = 510px-->
+<!--박스 전체 너비 : height+ (border + padding+ margin)x2 = 100+(5+50+50)x2 = 100+210 = 310px-->
+</html>

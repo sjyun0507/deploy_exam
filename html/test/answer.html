@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-size: 11px;
+        }
+
+        div, table {
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        div {
+            padding: 20px 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            border: 1px solid #ccc;
+        }
+
+        td, th {
+            border: 1px solid #ccc;
+            padding: 8px;
+        }
+
+        td {
+
+        }
+
+        input[type=text], input[type=tel], input[type=email], input[type=password] {
+            border: 1px solid #ccc;
+            padding: 4px;
+        }
+
+        th {
+            width: 130px;
+            background-color: #eaeaea;
+        }
+
+        span {
+            color: #e41a1a;
+        }
+
+        /*특성*/
+        .right {
+            text-align: right;
+        }
+
+        .noLine {
+            border: none;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        table:first-child {
+            border: none;
+            border-bottom: 1px solid #ccc;
+        }
+
+        table td:nth-child(2) span {
+            color: #1ad1d1
+        }
+		div:last-child {
+            text-align: center;
+		}
+
+        input[type="submit"], input[type="reset"] {
+            color: #fff;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            margin: 0 2px;
+        }
+
+        input[type="submit"] {
+            background-color: #568838;
+        }
+
+        input[type="reset"] {
+            background-color: #535353;
+        }
+	</style>
+</head>
+<body>
+	<table>
+		<tr>
+			<td class="noLine"><h1>회원가입</h1></td>
+			<td class="right noLine">홈 > 화면 > <span>회원가입</span></td>
+		</tr>
+	</table>
+	<div>
+		<span>*</span> 필수입력사항
+	</div>
+<form action="./action.php" method="post">
+	<table>
+		<tr>
+			<th><label for="id">아이디</label><span>*</span></th>
+			<td><input type="text" name="id" id="id" min="3" required>
+				영문자,숫자,_만 입력 가능. 최소 3자 이상 입력하세요.
+			</td>
+		</tr>
+		<tr>
+			<th><label for="pass">비밀번호</label><span>*</span></th>
+			<td><input type="password" name="pass" id="pass" min="10" required>
+				영문자,숫자,특수문자 중 2종류 이상의 조합으로 10자이상
+			</td>
+		</tr>
+	</table>
+
+	<div>
+		<input type="submit" value="회원가입">
+		<input type="reset" value="취소">
+	</div>
+</form>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  <style>
+    /*-----------------웹 문서 제작 시 초기화 스타일 --------------- */
+    *{margin : 0;box-sizing: border-box;}
+    a{text-decoration: none; color:black;}
+    li{list-style: none;}
+    img{display: block; border:0}
+    body{font-family: "Noto Sans KR", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 13px;
+      color: #3a3a3a;
+    }
+    /*------------------------------------------------------- */
+    #top,#banner,#contents,#bottom{
+      width: 100%;
+    }
+    /*--------------------- #TOP------------------- */
+    #top{
+      height: 120px;
+      text-align: center;
+    }
+    #top ul {
+      height: 120px;
+      display: inline-block;
+      list-style: none;
+    }
+    #top ul li{
+      float: left;
+      padding: 0 20px;
+      line-height: 120px;
+    }
+    #top ul li:nth-child(4){
+      padding-top: 20px;
+    }
+    #top ul li:last-child{
+      padding-top: 44px;
+    }
+    /*--------------------- #BANNER------------------- */
+    #banner{
+      background-image:url("./img/picture01.png");
+      background-position: center;
+      height: 464px;
+      align-content: center;
+    }
+    #banner>div{
+      background: #f3f6d5;
+      height:200px;
+      width: 400px;
+      margin: 0 auto;
+      text-align: center;
+      padding-top: 20px;
+    }
+    #banner div span.dinnerTime{
+      font-size: 22px;
+      font-weight: bold;
+      color: #000;
+      padding: 10px 0;
+    }
+    #banner div input{
+      width: 120px;
+      height: 40px;
+      border: 0;
+      border-radius: 5px;
+      margin-top: 10px;
+      font-size: 14px;
+      color: #424242;
+    }
+    #banner div input[value="ZIP Code"]{
+      background: #ffffff;
+    }
+    #banner div input[value="See Menu"]{
+      background: #e49c32;
+      color: #fff;
+    }
+    /*--------------------- #CONTENTS------------------- */
+    #contents{
+      height: 400px;
+    }
+    #contents div {
+      text-align: center;
+      color: #424242;
+      padding-top: 25px;
+      font-size: 14px;
+    }
+    #contents img{
+      align-content: center;
+      margin: 0 auto;
+    }
+    #contents div span{
+      font-size: 20px;
+      font-weight: bold;
+      color: #000;
+    }
+    #contents ul {
+      height: 120px;
+      display: inline-block;
+      float: left;
+      text-align: center;
+    }
+    #contents ul li{
+      text-align: center;
+      float: left;
+      padding: 50px;
+      border-bottom: 1px dotted #424242;
+    }
+    /*--------------------- #BOTTOM------------------- */
+    #bottom{
+      background: #ececec;
+      height: 304px;
+      text-align: center;
+    }
+    #bottom>div{
+      margin: 0 auto;
+      width: 914px;
+    }
+    #bottom h4{
+      font-size: 21px;
+      font-weight: bold;
+      color: #000;
+    }
+    #bottom>div>div{
+      float: left;
+    }
+    #bottom>div>div:nth-child(1){
+      width: 600px;
+      padding-top: 100px;
+      text-align: left;
+    }
+    #bottom>div>div:nth-child(2){
+      width: 314px;
+    }
+
+  </style>
+
+</head>
+<body>
+  <div id="top">
+    <ul>
+      <li><a href="#">How it works</a></li>
+      <li><a href="#">Gifts</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#"><img src ="./img/logo.png" alt="대체이미지"></a></li>
+      <li><a href="#">Login</a></li>
+      <li><a href="#">Members</a></li>
+      <li><a href="#"><img src ="./img/top_icon.png" alt="대체이미지"></a></li>
+    </ul>
+  </div>
+
+  <div id="banner">
+    <div>
+      RECLAIM<br>
+      <p><span class ="dinnerTime">DINNERTIME</span></p>
+      Fresh ingredients. Chef-made.<br>
+      Delivered. Ready when you are.<br>
+      Enter Your ZIP Code To View Our Menu<br>
+      <input type="button" value="ZIP Code"><input type="button" value="See Menu">
+    </div>
+  </div>
+
+  <div id="contents">
+    <div>
+      "WHAT'S FOR DINNER?"<br>
+      <span>FINALLY HAS AN<br>EASY ANSWER</span><br>
+    </div>
+    <div>
+      <ul>
+        <li>
+          <img src ="./img/icon1.png" alt="대체이미지"><br>
+          Chef-Made Meals Our chefs use fresh,<br>
+          seasonal ingredients to make<br>
+          affordable, tasty, nourishing meals<br>
+        </li>
+        <li>
+          <img src ="./img/icon2.png" alt="대체이미지"><br>
+          Chef-Made Meals Our chefs use fresh,<br>
+          seasonal ingredients to make<br>
+          affordable, tasty, nourishing meals<br>
+        </li>
+        <li>
+          <img src ="./img/icon3.png" alt="대체이미지"><br>
+          Chef-Made Meals Our chefs use fresh,<br>
+          seasonal ingredients to make<br>
+          affordable, tasty, nourishing meals<br>
+        </li>
+        <li>
+          <img src ="./img/icon4.png" alt="대체이미지"><br>
+          Chef-Made Meals Our chefs use fresh,<br>
+          seasonal ingredients to make<br>
+          affordable, tasty, nourishing meals<br>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="bottom">
+    <div>
+      <div>
+        <h4>MEET OUR CHEF</h4>
+        <p>
+          Munchery chefs come from top restaurant kitchens. They bring mad <br>
+          skills, tons of passion, and expertise in a delicious array of cuisines.<br>
+          They insist, as we do, on using only the freshest seasonal ingredients.
+        </p>
+      </div>
+
+      <div>
+        <img src="./img/human.png" alt="human">
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

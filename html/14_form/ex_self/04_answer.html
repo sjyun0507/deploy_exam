@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>중급 회원가입 양식</title>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+	<style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #f0f2f5;
+            padding: 40px 20px;
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 6px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .form-group span {
+            color: red;
+            font-weight: bold;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: border 0.2s;
+        }
+
+        .form-group input:focus {
+            border-color: #4a90e2;
+            outline: none;
+        }
+
+        .address-flex {
+            display: flex;
+            gap: 10px;
+        }
+
+        .address-flex input:first-child {
+            flex: 1;
+        }
+
+        .address-flex input:last-child {
+            flex: 2;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #4a90e2;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .submit-btn:hover {
+            background-color: #357ab8;
+        }
+	</style>
+</head>
+<body>
+
+<section class="form-container">
+	<h2 style="margin-bottom: 20px;">회원가입</h2>
+
+	<div class="form-group">
+		<label for="name">이름 <span>*</span></label>
+		<input type="text" id="name" placeholder="이름을 입력하세요">
+	</div>
+
+	<div class="form-group">
+		<label for="email">이메일 <span>*</span></label>
+		<input type="email" id="email" placeholder="예: example@domain.com">
+	</div>
+
+	<div class="form-group">
+		<label for="password">비밀번호 <span>*</span></label>
+		<input type="password" id="password" placeholder="비밀번호를 입력하세요">
+	</div>
+
+	<div class="form-group">
+		<label for="confirmPassword">비밀번호 확인 <span>*</span></label>
+		<input type="password" id="confirmPassword" placeholder="다시 입력해주세요">
+	</div>
+
+	<div class="form-group">
+		<label for="phone">휴대폰 번호 <span>*</span></label>
+		<input type="text" id="phone" placeholder="010-xxxx-xxxx">
+	</div>
+
+	<div class="form-group">
+		<label for="zip">주소 <span>*</span></label>
+		<div class="address-flex">
+			<input type="text" id="zip" placeholder="우편번호">
+			<input type="text" id="addr" placeholder="기본 주소">
+		</div>
+	</div>
+
+	<div class="form-group">
+		<input type="text" id="addrDetail" placeholder="상세 주소">
+	</div>
+
+	<button class="submit-btn">가입하기</button>
+</section>
+
+</body>
+</html>
+</body>
+</html>

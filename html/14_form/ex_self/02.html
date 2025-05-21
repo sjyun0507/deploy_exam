@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<!--5>result>number.html-->
+	<style>
+        fieldset {
+            margin: 3px;
+            padding: 3px;
+            border: 1px solid #000000;
+        }
+		legend {
+			font-size: 15px;
+			padding: 5px;
+		}
+		p{
+			margin: 10px;
+			font-size: 15px;
+		}
+
+        input[type=checkbox] {
+            padding: 35px;
+			font-size: 13px;
+        }
+		li{
+            font-size: 14px;
+		}
+        input[type=number] {
+            width: 28px;
+            height: 14px;
+        }
+	</style>
+</head>
+<body>
+<h1>레드향 주문하기</h1>
+
+<fieldset>
+	<legend>상품 선택</legend>
+	<p><b>주문할 상품을 선택해 주세요.</b></p>
+
+	<ul>
+<!--		<li><input type="checkbox">선물용 3kg <input type="number" maxlength="5">개 (최대 5개)</li>-->
+<!--		<li><input type="checkbox">선물용 5kg <input type="number" maxlength="5">개 (최대 5개)</li>-->
+<!--		<li><input type="checkbox">가정용 3kg <input type="number" maxlength="5">개 (최대 5개)</li>-->
+<!--		<li><input type="checkbox">가정용 5kg <input type="number" maxlength="5">개 (최대 5개)</li>-->
+		<li>
+			<label><input type="checkbox" name="prod" value="s_3">선물용 3kg</label>
+			<input type="number" min="0" max="5">개 (최대 5개)
+		</li>
+		<li>
+			<label><input type="checkbox" name="prod" value="s_5">선물용 5kg</label>
+			<input type="number" min="0" max="3" value="1">개 (최대 3개)
+		</li>
+		<li>
+			<label><input type="checkbox" name="prod" value="f_3">가정용 3kg</label>
+			<input type="number" min="0" max="5">개 (최대 5개)
+		</li>
+		<li>
+			<label><input type="checkbox" name="prod" value="f_5">가정용 5kg</label>
+			<input type="number" min="0" max="3" value="1">개 (최대 3개)
+		</li>
+	</ul>
+
+	<p><b>포장 선택</b></p>
+	<ul>
+<!--		<li><input type="radio" name="wrap" value="wrap" id="wrap">선물 포장</li>-->
+<!--		<li><input type="radio" name="wrap2" value="wrap2" id="wrap2">선물 포장 안 함</li>-->
+		<li><label><input type="radio" name="gift" value="yes" >선물 포장</label></li>
+		<li><label><input type="radio" name="gift" value="no">선물 포장 안 함</label></li>
+	</ul>
+</fieldset>
+
+<fieldset>
+	<legend>배송 정보</legend>
+	<ul>
+<!--		<li> 이름 <input type="text" name="name" ></li>-->
+<!--		<li> 배송 주소 <input type="text" name="address" ></li>-->
+<!--		<li> 메일 주소 <input type="email" name="email" ></li>-->
+<!--		<li> 연락처 <input type="tel" name="tel" v</li>-->
+		<li>
+		<label for="user-name">이름 </label>
+		<input type="text" id="user-name">
+		</li>
+		<li>
+			<label for="addr">배송 주소</label>
+			<input type="text" id="addr">
+		</li>
+		<li>
+			<label for="mail">메일 주소</label>
+			<input type="email" id="mail">
+		</li>
+		<li>
+			<label for="phone">연락처</label>
+			<input type="tel" id="phone">
+		</li>
+	</ul>
+
+</fieldset>
+</body>
+</html>

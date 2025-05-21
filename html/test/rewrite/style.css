@@ -1,0 +1,110 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 11px;
+}
+
+div, table {
+    width: 650px;
+    margin: 0 auto;
+}
+
+div {
+    padding: 20px 0 10px 0;
+}
+
+
+td, th {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+th {
+    width: 120px;
+    background-color: #eaeaea;
+}
+
+td {
+
+}
+
+input[type=text], input[type=tel], input[type=password], input[type=email] {
+    border: 1px solid #ccc;
+    padding: 4px;
+}
+
+span {
+    color: #b81616;
+}
+
+/* 특성 */
+.right {
+    text-align: right;
+}
+
+.noLine {
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.address {
+    padding: 1px 5px;
+    border-top: none;
+    border-bottom: none;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+.submit-btn {
+    text-align: center;
+    font-size: 11px;
+}
+table:first-child {
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+table td:nth-child(2) span {
+    color: #1ad1d1
+}
+
+div:last-child {
+    text-align: center;
+}
+
+input[type=submit], input[type=reset] {
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin: 0 2px;
+}
+
+input[type=submit] {
+    background-color: #77ac85;
+}
+
+input[type=reset] {
+    background-color: #a5aeac;
+}
+
+
+fieldset {
+    border: 1px solid #4e4e4e;
+    padding: 5px;
+    text-align: center;
+}
+
+legend {
+    text-align: left;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #ccc;
+}

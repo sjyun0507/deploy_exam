@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.style{
+    width: 1700px;
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    font-weight : bold;
+    color: black;
+    text-align:left;
+}
+.style2{
+    padding: 10px;
+    font-size: 10px;
+    text-align: right;
+}
+.style3{
+    font-size: 10px;
+    color: #289dc8;
+
+}
+.style4{
+    text-align: center;
+}
+.style5{
+    text-align: right;
+}
+.style6{
+    border: none;
+}
+table{
+    border: 1px solid #cccccc;
+    border-collapse: collapse;
+    width: 700px;
+    font-size: 13px;
+    padding: 5px;
+    text-align: center;
+    margin: 0 auto;
+}
+th,td{
+    border: 1px solid #cccccc;
+    padding: 5px;
+}
+th{
+    text-align: center;
+    background-color: #e8e6e6;
+    color: #000000;
+}
+td{
+    text-align: left;
+}
+caption{
+    text-align: left;
+    font-size: 12px;
+}
+
+input[type="text"],[type="password"],[type="email"],[type="tel"]{
+    border: 1px solid #cccccc;
+}
+input[id=name],[id=name2] {
+    width: 70px;
+}
+input[id=email] {
+    width: 430px;
+}
+input[id=address],[id=address2],[id=addressRef] {
+    width: 300px;
+}
+input[id=zip],[id=auto] {
+    width: 50px;
+}
+.color2{
+    color: red;
+}
+.address{
+    border : none;
+    padding: 1px 5px;
+}
+#join{
+    background-color: #31bed8;
+    color: #ffffff;
+    border: none;
+    margin: 0 auto;
+    text-align: center;
+    width: 70px;
+    height: 25px;
+    font-size: 13px;
+}
+#cancel {
+    background-color: #535353;
+    color: #ffffff;
+    border: none;
+    margin: 0 auto;
+    text-align: center;
+    width: 50px;
+    height: 25px;
+    font-size: 13px;
+}
+
+.submit{
+    text-align: center;
+}
+.borderless table, .borderless td {
+    border: none;
+}
+fieldset{
+    border: 1px solid #4e4e4e;
+    padding: 5px;
+    text-align:center;
+}
+legend{
+    text-align: left;
+}

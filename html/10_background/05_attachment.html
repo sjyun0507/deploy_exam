@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+       /* background-attachment 속성
+		배경이미지가 어떤 방식으로 넣을 것인지 지정하는 스타일 속성
+		세로가 길어야 확인이 가능해서 body 선택자에 높이를 지정해서 스크롤이 생기게 함.
+
+		background-attachment: scroll - 기본값, 스크롤에 따라 배경이미지도 움직임
+		background-attachment: fixed - 배경 이미지 고정/브라우저에서 스크롤 바를 움직이더라도 이미지 고정
+
+		*/
+		*{
+			margin : 0; padding : 0;box-sizing: border-box;
+		}
+		body{
+			background-image: url("img/art.jpg");
+			background-size: 100%;
+			background-repeat: no-repeat;
+			height: 5000px;
+			background-attachment: fixed;
+		}
+
+	</style>
+</head>
+<body>
+
+</body>
+</html>

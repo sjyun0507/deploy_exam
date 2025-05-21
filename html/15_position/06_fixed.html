@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+		/*
+		* fixed : 절대 좌표와 함게 위치를 지정(고정위치 지정방식)
+			고정된 상태로 위치가 지정
+			스크롤과 상관없이 html 화면 기준 좌츨상단을 기준으로 좌표 고정.
+			top, left, right, bottom의 영향을 받음.
+		 */
+		*{margin : 0; padding : 0; box-sizing : border-box;}
+		body{height:3000px;} /* 스크롤 바를 나타내기 위해 문서의 높이를 임의의 크기로 지정 */
+		div{
+			width:300px;
+			height:300px;
+			border:4px solid black;
+			margin-left:30px;
+			font-size:30px;
+			line-height:300px;
+			text-align:center;
+
+		}
+		div:nth-of-type(1){
+			background: red;
+			left:100px;
+			top:100px;
+			Position: absolute;
+		}
+		div:nth-of-type(2){
+			background: blue;
+			right:100px;
+			bottom:100px;
+			position: fixed;
+		}
+	</style>
+</head>
+<body>
+	<div>absolute</div>
+	<div>fixed</div>
+
+</body>
+</html>
